@@ -1,16 +1,18 @@
-# 💸 Java Expense Tracker
+# 💰 Java Expense Tracker (Advanced)
 
-A terminal-based expense tracker where you can add and view your expenses, track by category, and save data to a file.
+A powerful terminal-based expense tracking application built in Java. Track your personal spending, categorize expenses, generate summaries, and save everything securely to CSV.
 
 ---
 
 ## ✨ Features
 
-- Add expenses with description and category
-- View all added expenses
-- Show total spent and breakdown by category
-- File-based data storage (`expenses.txt`)
-- Modular object-oriented design
+- ➕ Add new expenses with description, category, and amount
+- 🧾 View full expense history in a table
+- 📂 Filter by category
+- 📆 Filter by month and year
+- 💸 View total and category-based summaries
+- 💾 Persistent storage in `expenses.csv`
+- 🧠 Validations and clean error handling
 
 ---
 
