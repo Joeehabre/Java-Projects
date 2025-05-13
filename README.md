@@ -1,58 +1,50 @@
 # ☕ Java Projects by Joe Habre
 
-Welcome to my curated collection of Java mini-projects. This repository showcases my journey in mastering core Java concepts by building functional and interactive terminal and GUI-based applications. Each project is designed to demonstrate real-world problem solving through clean, modular code using object-oriented programming (OOP), file handling, and basic game logic.
+Welcome to my collection of Java mini-projects — a showcase of my growth as a developer and my passion for building clean, functional, and interactive software using Java. Each project here is designed to reinforce core programming concepts like object-oriented design, file handling, GUI development, and more.
+
+These applications range from practical tools to classic games, all written with readability, modularity, and future improvement in mind.
 
 ---
 
-## 📚 Table of Contents
-
-- [Projects](#projects)
-- [Technologies Used](#technologies-used)
-- [Planned Projects](#planned-projects)
-- [Folder Structure](#folder-structure)
-- [License](#license)
-- [Contact](#contact)
-
----
-
-## 🛠️ Projects
+## 🧩 Featured Projects
 
 ### 🔹 [Bank Account System](./bank-account)
-A command-line banking simulation where users can create accounts, deposit and withdraw money, check balances, and access their accounts using unique IDs.  
-**Concepts:** Classes, Object-Oriented Programming, Maps, Scanner, Input Validation
+A command-line simulation of a basic banking system. Users can create accounts, log in using unique IDs, and perform transactions like deposits and withdrawals.  
+**Concepts:** OOP, Encapsulation, HashMap, User Input, Input Validation
 
 ### 🔹 [Calculator](./calculator)
-A robust terminal calculator that supports basic operations (+, -, *, /) and advanced ones like exponentiation and modulus. It loops until the user quits, and handles errors gracefully.  
-**Concepts:** Control Flow, Methods, Loops, Exception Handling
+A robust CLI calculator supporting basic operations (`+ - * /`) and advanced ones like power and modulus. It handles invalid input and loops until you quit.  
+**Concepts:** Control Flow, Exception Handling, Loops, Math Operations
 
 ### 🔹 [To-Do List](./todo-list)
-An interactive CLI to-do list manager where users can add and remove tasks. All tasks are stored in a local file (`tasks.txt`) so they persist between runs.  
-**Concepts:** File I/O, ArrayLists, Scanner Input, Input Validation
+A task management app with persistent storage. Users can add and remove tasks, and tasks are saved to a file so nothing is lost between sessions.  
+**Concepts:** File I/O, Lists, Loops, Input Validation
 
 ### 🔹 [Snake Game](./snake-game)
-A complete version of the classic Snake game built with Java Swing. Features include score tracking, increasing speed, keyboard controls, game over screen, and restart functionality.  
-**Concepts:** Java GUI (Swing), Timer, Key Events, Game Loop Logic
+A fully playable version of Snake using Java Swing. Features include real-time movement, scoring, speed increase, restart capability, and keyboard controls.  
+**Concepts:** Java GUI, Game Loops, Timer, Key Events, Collision Detection
 
 ---
 
-## 🧰 Technologies Used
+## 🛠️ Technologies Used
 
-- Java (JDK 17+)
-- Java Swing (GUI)
-- Java Collections (`ArrayList`, `HashMap`)
-- Java File I/O (`BufferedReader`, `BufferedWriter`)
-- Exception Handling
-- Object-Oriented Programming Principles
+- **Language:** Java (JDK 17+)
+- **GUI:** Java Swing
+- **Data Structures:** `ArrayList`, `HashMap`
+- **Persistence:** File I/O with `BufferedReader` / `BufferedWriter`
+- **Core Concepts:** OOP, Exception Handling, Game Logic
 
 ---
 
-## 🚀 My Projects
+## 🚧 Upcoming Projects
 
-- 📅 **Task Manager with Due Dates & Priority** (using JSON)
-- 📡 **Weather App** (API-based using HTTP requests)
-- 💬 **Chat App** (Client-server chat using sockets)
-- 💳 **Expense Tracker** with categories and summaries
-- 🎮 **Tic Tac Toe GUI** with AI opponent
+These are projects I plan to add soon:
+
+- 📅 **Task Manager with Priorities & Deadlines** — JSON-based data structure
+- 📡 **Weather App** — using real-time API and HTTP requests
+- 💬 **Chat App** — local client-server messaging with sockets
+- 💳 **Expense Tracker** — track expenses by category, total, and history
+- 🎮 **Tic Tac Toe (GUI)** — with PvP and AI opponent using Minimax
 
 ---
 
@@ -66,6 +58,7 @@ You're free to use, modify, and share these projects.
 ## 📬 Contact
 
 **Joe Habre**  
+
 📧 [joehabre48@gmail.com](mailto:joehabre48@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/joe-habre-228557330)  
 📸 [Instagram](https://www.instagram.com/joeehabre)
