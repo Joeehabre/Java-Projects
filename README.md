@@ -1,32 +1,54 @@
 # ☕ Java Projects by Joe Habre
 
-Welcome to my curated collection of Java mini-projects — a showcase of my journey and passion for writing clean, functional, and interactive software. These projects reinforce core programming concepts like object-oriented design, file handling, GUI development, and user-friendly CLI applications.
+Welcome to my collection of Java projects — a showcase of my Computer Science journey at AUB and my passion for building clean, functional, and interactive software.  
+These projects explore core programming concepts like **object-oriented design, file handling, GUI development, CLI tools, and problem-solving**.  
 
-Each application is carefully built with readability, modularity, and future expansion in mind.
+Each application is written with **readability, modularity, and future expansion** in mind.
 
 ---
 
 ## 🧩 Featured Projects
 
-### 🔹 [Bank Account System](./bank-account)
-A command-line simulation of a simple banking system. Users can create accounts, log in using unique IDs, deposit and withdraw money, and check balances.  
-**Concepts:** OOP, Encapsulation, HashMap, Scanner Input, Validation
+### 🔹 [Study Planner](./study-planner) 📚
+A comprehensive command-line planner to help students organize their study tasks.  
+Features include task priorities, due dates, tags, filters, sorting, and CSV import/export with autosave.  
+Users can also generate statistics and highlight overdue tasks for better productivity.  
+**Concepts:** OOP, Enums, File I/O (CSV), Data Persistence, CLI UX, Modular Design  
 
-### 🔹 [Calculator](./calculator)
-A robust CLI calculator supporting basic arithmetic (`+ - * /`) and advanced operations like exponentiation and modulus. Includes input validation and loops until quit.  
-**Concepts:** Control Flow, Exception Handling, Loops, Method Structure
+---
 
-### 🔹 [To-Do List](./todo-list)
-A task manager where users can add and remove tasks, with persistent storage using a text file. Includes menu-based interaction and input validation.  
-**Concepts:** File I/O, ArrayLists, Loops, Input Handling
+### 🔹 [Bank Account System](./bank-account) 🏦
+A command-line simulation of a simple banking system.  
+Users can create accounts, log in using unique IDs, deposit and withdraw money, and check balances.  
+**Concepts:** OOP, Encapsulation, HashMap, Scanner Input, Validation  
 
-### 🔹 [Snake Game](./snake-game)
-A fully functional version of Snake built with Java Swing. Features include keyboard controls, real-time movement, score tracking, increasing speed, and restart on game over.  
-**Concepts:** Java GUI (Swing), Timers, Event Handling, Collision Logic
+---
 
-### 🔹 [Expense Tracker](./expense-tracker)
-An advanced terminal-based expense tracker. Supports adding expenses with category and timestamp, filtering by category or date, generating summaries, and saving to CSV.  
-**Concepts:** File I/O (CSV), OOP, Stream API, HashMap, Date Filtering
+### 🔹 [Calculator](./calculator) ➗
+A robust CLI calculator supporting both basic arithmetic (`+ - * /`) and advanced operations like exponentiation and modulus.  
+Includes input validation and loops until the user decides to quit.  
+**Concepts:** Control Flow, Exception Handling, Loops, Method Structure  
+
+---
+
+### 🔹 [To-Do List](./todo-list) ✅
+A text-file-backed task manager where users can add and remove tasks.  
+Simple menu-based interaction makes it beginner-friendly, while persistent storage ensures data is not lost.  
+**Concepts:** File I/O, ArrayLists, Loops, Input Handling  
+
+---
+
+### 🔹 [Snake Game](./snake-game) 🐍
+The classic Snake game rebuilt with **Java Swing**.  
+Includes responsive keyboard controls, real-time movement, score tracking, speed progression, and restart on game over.  
+**Concepts:** Java GUI (Swing), Timers, Event Handling, Collision Logic  
+
+---
+
+### 🔹 [Expense Tracker](./expense-tracker) 💰
+A terminal-based expense tracker for logging and analyzing expenses.  
+Supports categories, timestamps, filtering by date or category, generating summaries, and saving to CSV.  
+**Concepts:** File I/O (CSV), OOP, Stream API, HashMap, Date Filtering  
 
 ---
 
