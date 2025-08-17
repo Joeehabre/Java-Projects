@@ -30,17 +30,6 @@ An advanced terminal-based expense tracker. Supports adding expenses with catego
 
 ---
 
-## 🛠️ Technologies Used
-
-- **Language:** Java (JDK 17+)
-- **GUI:** Java Swing (Snake Game)
-- **File Handling:** BufferedReader, BufferedWriter, CSV
-- **Data Structures:** ArrayList, HashMap
-- **Utilities:** Scanner, LocalDateTime, Java Streams
-- **Design Patterns:** Object-Oriented Design, Modular Architecture
-
----
-
 ## 🚧 Upcoming Projects
 
 Projects I plan to build next:
