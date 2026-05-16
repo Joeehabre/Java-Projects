@@ -18,7 +18,20 @@ jobs:
           java-version: "17"
           distribution: "temurin"
 
-      - name: Compile all Java projects
-        run: |
-          find . -name "*.java" | xargs javac -cp . -d /tmp/out 2>&1
-          echo "All Java files compiled successfully."
+      - name: Compile Calculator
+        run: javac calculator/Calculator.java
+
+      - name: Compile To-Do List
+        run: javac todo-list/TodoApp.java
+
+      - name: Compile Bank Account
+        run: javac bank-account/BankAccount.java
+
+      - name: Compile Expense Tracker
+        run: javac expense-tracker/ExpenseTracker.java
+
+      - name: Compile Snake Game
+        run: javac snake-game/SnakeGame.java snake-game/GamePanel.java
+
+      - name: Compile Study Planner
+        run: javac study-planner/*.java
