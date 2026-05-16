@@ -88,14 +88,18 @@ public class Main {
         System.out.println("Editing: " + t.pretty());
         System.out.print("New title (blank to keep): ");
         String title = sc.nextLine().trim();
-        LocalDate due = askDate(sc, "New due date (YYYY-MM-DD or blank to clear): ", true);
-        Priority pr = askPriority(sc, "New priority [LOW/MEDIUM/HIGH or blank]: ", true);
+        System.out.print("New due date (YYYY-MM-DD to set, '-' to clear, blank to keep): ");
+        String dateInput = sc.nextLine().trim();
+        Priority pr = askPriority(sc, "New priority [LOW/MEDIUM/HIGH or blank to keep]: ", true);
         System.out.print("Tags (comma-separated; blank to keep; '-' to clear): ");
         String tagsLine = sc.nextLine().trim();
 
         if (!title.isEmpty()) t.setTitle(title);
-        if (due != null || " ".equals(" ")) {
-            t.setDueDate(due);
+        if (dateInput.equals("-")) {
+            t.setDueDate(null);
+        } else if (!dateInput.isEmpty()) {
+            try { t.setDueDate(java.time.LocalDate.parse(dateInput)); }
+            catch (java.time.format.DateTimeParseException e) { System.out.println("Invalid date format. Due date unchanged."); }
         }
         if (pr != null) t.setPriority(pr);
         if (!tagsLine.isEmpty()) {
@@ -117,10 +121,12 @@ public class Main {
         System.out.print("Set status [TODO/DOING/DONE]: ");
         String s = sc.nextLine().trim().toUpperCase();
         Status st = switch (s) {
+            case "TODO"  -> Status.TODO;
             case "DOING" -> Status.DOING;
-            case "DONE" -> Status.DONE;
-            default -> Status.TODO;
+            case "DONE"  -> Status.DONE;
+            default -> { System.out.println("Invalid status. Use TODO, DOING, or DONE."); UI.pause(sc); yield null; }
         };
+        if (st == null) return;
         t.setStatus(st);
         Storage.save(DATA_FILE, planner);
         System.out.println("Updated: " + t.pretty());
