@@ -10,23 +10,53 @@ Data is stored locally in a simple **CSV** file (`tasks.csv`).
 ## ✨ Features
 
 - Add / list / edit / delete tasks
-- **Priorities:** `LOW` | `MEDIUM` | `HIGH`
-- **Statuses:** `TODO` | `DOING` | `DONE`
+- **Priorities:** `LOW` | `MEDIUM` | `HIGH` (color-coded)
+- **Statuses:** `TODO` | `DOING` | `DONE` (color-coded)
 - **Tags** (comma-separated, e.g. `algorithms,math`)
 - Filters: by **status**, **priority**, **tag**, **due-before**
 - Sorting: by **due**, **priority**, **status**, **id**
-- **Autosave** to `tasks.csv` after changes
+- **Overdue** tasks highlighted in red
+- **Autosave** after every change
 - **Import/Export** CSV (`tasks_import.csv` ⇆ `tasks_export.csv`)
-- **Overdue highlighting** and **summary stats**
-- ANSI-colored output (falls back gracefully if terminal lacks color)
+- **Stats** — totals by status and priority, overdue count
+- ANSI-colored output with correct column alignment
 
 ---
 
-## 🚀 Quick Start
-
-From the repo root:
+## 🚀 How to Run
 
 ```bash
 cd study-planner
 javac *.java
 java Main
+```
+
+---
+
+## 💡 Example
+
+```
+==== Tasks ====
+
+ID   PRIOR   STATUS   DUE          TAGS       TITLE
+---------------------------------------------------------------------
+1    [HIGH]  (TODO)   2025-06-01   math       Calculus problem set
+2    [MED]   (DOING)  2025-05-20   algo       Binary search trees
+3    [LOW]   (DONE)   -            -          Read chapter 3
+```
+
+---
+
+## 📁 File Structure
+
+| File | Role |
+|------|------|
+| `Main.java` | Entry point, menus, user interaction |
+| `Planner.java` | Task list logic, filtering, sorting |
+| `Task.java` | Task data model |
+| `Storage.java` | CSV read/write |
+| `Csv.java` | CSV escaping and parsing |
+| `TagUtil.java` | Tag parsing helpers |
+| `UI.java` | ANSI colors, display formatting |
+| `Priority.java` | Priority enum |
+| `Status.java` | Status enum |
