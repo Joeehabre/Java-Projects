@@ -1,5 +1,7 @@
 # ☕ Java Projects by Joe Habre
 
+![Build](https://github.com/Joeehabre/Java-Projects/actions/workflows/build.yml/badge.svg)
+
 Welcome to my collection of Java projects — a showcase of my Computer Science journey at AUB and my passion for building clean, functional, and interactive software.  
 These projects explore core programming concepts like **object-oriented design, file handling, GUI development, CLI tools, and problem-solving**.  
 
