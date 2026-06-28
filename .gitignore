@@ -16,3 +16,6 @@ tasks.csv
 tasks_export.csv
 expenses.csv
 accounts.dat
+
+# Claude Code local artifacts
+.claude/
