@@ -3,7 +3,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-class BankAccount {
+class Account {
     private static int counter = 1000;
     private final int id;
     private final String name;
@@ -12,14 +12,14 @@ class BankAccount {
 
     private static final DateTimeFormatter FMT = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
-    public BankAccount(String name, double initialDeposit) {
+    public Account(String name, double initialDeposit) {
         this.id = ++counter;
         this.name = name;
         this.balance = initialDeposit;
         log("Account opened with initial deposit of $" + f(initialDeposit));
     }
 
-    BankAccount(int id, String name, double balance, List<String> txHistory) {
+    Account(int id, String name, double balance, List<String> txHistory) {
         this.id = id;
         this.name = name;
         this.balance = balance;
@@ -76,9 +76,9 @@ class BankAccount {
     private static String f(double n) { return String.format("%.2f", n); }
 }
 
-class BankApp {
+public class BankAccount {
     private static final String FILE = "accounts.dat";
-    private static final Map<Integer, BankAccount> accounts = new LinkedHashMap<>();
+    private static final Map<Integer, Account> accounts = new LinkedHashMap<>();
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -109,7 +109,7 @@ class BankApp {
         double deposit = promptAmount("Initial deposit: $");
         if (deposit < 0) return;
 
-        BankAccount account = new BankAccount(name, deposit);
+        Account account = new Account(name, deposit);
         accounts.put(account.getId(), account);
         save();
         System.out.println("  Account created. Your ID: " + account.getId());
@@ -121,7 +121,7 @@ class BankApp {
         try { id = Integer.parseInt(scanner.nextLine().trim()); }
         catch (NumberFormatException e) { System.out.println("  Invalid ID."); return; }
 
-        BankAccount account = accounts.get(id);
+        Account account = accounts.get(id);
         if (account == null) { System.out.println("  Account not found."); return; }
 
         while (true) {
@@ -145,13 +145,13 @@ class BankApp {
         }
     }
 
-    private static void transfer(BankAccount from) {
+    private static void transfer(Account from) {
         System.out.print("  Destination account ID: ");
         int toId;
         try { toId = Integer.parseInt(scanner.nextLine().trim()); }
         catch (NumberFormatException e) { System.out.println("  Invalid ID."); return; }
 
-        BankAccount to = accounts.get(toId);
+        Account to = accounts.get(toId);
         if (to == null) { System.out.println("  Destination account not found."); return; }
         if (to.getId() == from.getId()) { System.out.println("  Cannot transfer to the same account."); return; }
 
@@ -169,7 +169,7 @@ class BankApp {
         if (accounts.isEmpty()) { System.out.println("  No accounts yet."); return; }
         System.out.printf("%n  %-6s %-20s %s%n", "ID", "Name", "Balance");
         System.out.println("  " + "-".repeat(36));
-        for (BankAccount a : accounts.values())
+        for (Account a : accounts.values())
             System.out.printf("  %-6d %-20s $%.2f%n", a.getId(), a.getName(), a.getBalance());
     }
 
@@ -177,7 +177,7 @@ class BankApp {
 
     private static void save() {
         try (PrintWriter pw = new PrintWriter(new FileWriter(FILE))) {
-            for (BankAccount a : accounts.values()) {
+            for (Account a : accounts.values()) {
                 pw.println("ACCOUNT," + a.getId() + "," + a.getName() + "," + a.getBalance());
                 for (String tx : a.getTransactions()) pw.println("TX," + tx);
                 pw.println("END");
@@ -192,7 +192,7 @@ class BankApp {
         if (!f.exists()) return;
         try (BufferedReader br = new BufferedReader(new FileReader(f))) {
             String line;
-            BankAccount current = null;
+            Account current = null;
             List<String> txBuf = new ArrayList<>();
             while ((line = br.readLine()) != null) {
                 if (line.startsWith("ACCOUNT,")) {
@@ -203,13 +203,13 @@ class BankApp {
                         int id = Integer.parseInt(p[1]);
                         String name = p[2];
                         double balance = Double.parseDouble(p[3]);
-                        current = new BankAccount(id, name, balance, null);
+                        current = new Account(id, name, balance, null);
                         txBuf = new ArrayList<>();
                     } catch (Exception ignored) {}
                 } else if (line.startsWith("TX,") && current != null) {
                     txBuf.add(line.substring(3));
                 } else if (line.equals("END") && current != null) {
-                    BankAccount restored = new BankAccount(current.getId(), current.getName(), current.getBalance(), txBuf);
+                    Account restored = new Account(current.getId(), current.getName(), current.getBalance(), txBuf);
                     accounts.put(restored.getId(), restored);
                     current = null;
                 }

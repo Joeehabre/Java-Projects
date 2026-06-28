@@ -22,7 +22,7 @@ A terminal-based banking simulation supporting multiple accounts, transfers, tim
 ```bash
 cd bank-account
 javac BankAccount.java
-java BankApp
+java BankAccount
 ```
 
 ---
