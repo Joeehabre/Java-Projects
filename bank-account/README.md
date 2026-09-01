@@ -13,7 +13,7 @@ A terminal-based banking simulation supporting multiple accounts, transfers, tim
 - View timestamped transaction history per account
 - List all accounts with balances
 - Accounts and transactions persist to `accounts.dat`
-- Robust input validation, no crashes on bad input
+- Input validation, no crashes on bad input
 
 ---
 
