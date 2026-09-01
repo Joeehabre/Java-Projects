@@ -1,23 +1,23 @@
-# ✅ Java To-Do List
+# Java To-Do List
 
-A terminal task manager with full task lifecycle support — add, edit, complete, and clear tasks, all saved to a local file.
-
----
-
-## ✨ Features
-
-- ➕ Add new tasks
-- ✏️ Edit existing tasks
-- ✔️ Toggle tasks done / undone (`[x]` / `[ ]`)
-- 🗑️ Remove individual tasks
-- 🧹 Clear all completed tasks at once
-- 📊 Progress counter (`N/total done`)
-- 💾 Auto-saves to `tasks.txt` on every change
-- 🔁 Loads saved tasks on startup
+A terminal task manager with full task lifecycle support, add, edit, complete, and clear tasks, all saved to a local file.
 
 ---
 
-## 🚀 How to Run
+## Features
+
+- Add new tasks
+- Edit existing tasks
+- Toggle tasks done / undone (`[x]` / `[]`)
+- Remove individual tasks
+- Clear all completed tasks at once
+- Progress counter (`N/total done`)
+- Auto-saves to `tasks.txt` on every change
+- Loads saved tasks on startup
+
+---
+
+## How to Run
 
 ```bash
 cd todo-list
@@ -27,7 +27,7 @@ java TodoApp
 
 ---
 
-## 💡 Example
+## Example
 
 ```
 Your Tasks:

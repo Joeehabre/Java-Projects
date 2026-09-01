@@ -1,23 +1,23 @@
-# 🧮 Java Calculator
+# Java Calculator
 
-A terminal-based calculator supporting arithmetic, advanced operations, calculation history, and result chaining — all with clean input validation.
+A terminal-based calculator supporting arithmetic, advanced operations, calculation history, and result chaining, all with clean input validation.
 
 ---
 
-## ✨ Features
+## Features
 
-- ➕ Addition, Subtraction, Multiplication, Division
-- 🔢 Power (`^`) and Modulus (`%`)
+- Addition, Subtraction, Multiplication, Division
+- Power (`^`) and Modulus (`%`)
 - √ Square root (`sqrt`) as a unary operator
-- 🔗 `ans` — reuse the last result to chain calculations
-- 📜 `h` — view the last 10 calculations
-- 🔁 Continuous loop until you type `q`
-- ❌ Input validation and division-by-zero handling
-- 🧹 Clean number output (e.g. `5.0` shows as `5`)
+- `ans`: reuse the last result to chain calculations
+- `h`: view the last 10 calculations
+- Continuous loop until you type `q`
+- Input validation and division-by-zero handling
+- Clean number output (e.g. `5.0` shows as `5`)
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 cd calculator
@@ -27,7 +27,7 @@ java Calculator
 
 ---
 
-## 💡 Example Session
+## Example Session
 
 ```
 >> First number: 12

@@ -1,25 +1,25 @@
-# 🐍 Java Snake Game
+# Java Snake Game
 
 A polished Snake game built with Java Swing, featuring smooth visuals, a live high score, WASD support, and a proper pause screen.
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎮 Arrow keys **or WASD** for movement
-- 🏆 High score tracked and displayed on the HUD
-- 🍎 Food never spawns on the snake's body
-- 🌈 Gradient snake shading from head to tail
-- ⏸️ Press `P` to pause — semi-transparent overlay shown
-- 🔁 Press `R` to restart after game over
-- 💀 Game-over screen shows current score + all-time best
-- ⚡ Speed increases as the snake grows
-- 🪟 Anti-aliased rendering via `Graphics2D`
-- ❌ Press `Q` to quit
+- Arrow keys **or WASD** for movement
+- High score tracked and displayed on the HUD
+- Food never spawns on the snake's body
+- Gradient snake shading from head to tail
+- ⏸️ Press `P` to pause, semi-transparent overlay shown
+- Press `R` to restart after game over
+- Game-over screen shows current score + all-time best
+- Speed increases as the snake grows
+- Anti-aliased rendering via `Graphics2D`
+- Press `Q` to quit
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 cd snake-game
@@ -29,7 +29,7 @@ java SnakeGame
 
 ---
 
-## 🕹️ Controls
+## Controls
 
 | Key | Action |
 |-----|--------|

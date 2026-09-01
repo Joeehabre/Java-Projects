@@ -1,13 +1,13 @@
-# 📚 Study Planner (CLI)
+# Study Planner (CLI)
 
 A fast, no-dependencies CLI app to organize your study tasks with **priorities, due dates, tags, filters, sorting,** and **stats**.  
 Data is stored locally in a simple **CSV** file (`tasks.csv`).
 
-> Built with core Java only — perfect for showcasing OOP, file I/O, enums, and CLI UX.
+> Built with core Java only, perfect for showcasing OOP, file I/O, enums, and CLI UX.
 
 ---
 
-## ✨ Features
+## Features
 
 - Add / list / edit / delete tasks
 - **Priorities:** `LOW` | `MEDIUM` | `HIGH` (color-coded)
@@ -18,12 +18,12 @@ Data is stored locally in a simple **CSV** file (`tasks.csv`).
 - **Overdue** tasks highlighted in red
 - **Autosave** after every change
 - **Import/Export** CSV (`tasks_import.csv` ⇆ `tasks_export.csv`)
-- **Stats** — totals by status and priority, overdue count
+- **Stats**: totals by status and priority, overdue count
 - ANSI-colored output with correct column alignment
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ```bash
 cd study-planner
@@ -33,7 +33,7 @@ java Main
 
 ---
 
-## 💡 Example
+## Example
 
 ```
 ==== Tasks ====
@@ -47,7 +47,7 @@ ID   PRIOR   STATUS   DUE          TAGS       TITLE
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 | File | Role |
 |------|------|

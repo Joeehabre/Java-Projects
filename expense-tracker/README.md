@@ -1,24 +1,24 @@
-# 💰 Java Expense Tracker
+# Java Expense Tracker
 
-A terminal expense tracker for logging, filtering, and analyzing personal spending — with proper CSV persistence and category summaries.
-
----
-
-## ✨ Features
-
-- ➕ Add expenses with description, category, and amount
-- 🗑️ Delete any expense by number
-- 🧾 View full expense history in a formatted table
-- 🔍 Filter by category (partial match, case-insensitive)
-- 📆 Filter by month and year
-- 📊 Category summary sorted alphabetically with grand total
-- 💵 View total for any filtered result
-- 💾 Auto-saves to `expenses.csv` with proper quote escaping
-- ❌ Input validation on all fields
+A terminal expense tracker for logging, filtering, and analyzing personal spending, with proper CSV persistence and category summaries.
 
 ---
 
-## 🚀 How to Run
+## Features
+
+- Add expenses with description, category, and amount
+- Delete any expense by number
+- View full expense history in a formatted table
+- Filter by category (partial match, case-insensitive)
+- Filter by month and year
+- Category summary sorted alphabetically with grand total
+- View total for any filtered result
+- Auto-saves to `expenses.csv` with proper quote escaping
+- Input validation on all fields
+
+---
+
+## How to Run
 
 ```bash
 cd expense-tracker
@@ -28,7 +28,7 @@ java ExpenseTracker
 
 ---
 
-## 💡 Example
+## Example
 
 ```
 Menu:
